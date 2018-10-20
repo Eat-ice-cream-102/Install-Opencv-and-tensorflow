@@ -45,9 +45,9 @@ sudo apt-get -y install qt4-dev-tools
 
 pip install opencv-python
 
-#pip install opencv-contrib-python
+pip install opencv-contrib-python
 
-#sudo apt-get install libhdf5-dev
+sudo apt-get install libhdf5-dev
 
 wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
 
