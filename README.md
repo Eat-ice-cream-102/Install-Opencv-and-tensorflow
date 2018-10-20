@@ -4,6 +4,7 @@ Fast construct Environment for Opencv and tensorflow on Pi
 
 雖然神經網路相關或高強度的訓練不適用在pi上，但我們還是可以盡量榨乾pi的性能(優化特定type的運算，全開樹莓派CPU4核)，
 以下是針對這個為目的參數設定，須注意隨著版本的改變安裝或調整方式也有變化，我不確定這個方式會work到幾時，但目前可姑且用之。
+
 https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/
 為了方便各位我也製作img檔，讓各位不必再浪費時間編譯安裝。
 (可以mail或敲我跟我要，因為使用說明我還要跟各位說)
