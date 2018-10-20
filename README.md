@@ -21,35 +21,59 @@ PS:
 pip install tensorflow
 
 pip install picamera
+
 pip install matplotlib
+
 #sudo apt-get install libatlas-base-dev
+
 pip install pillow
+
 sudo pip install pillow lxml jupyter matplotlib cython
+
 #sudo apt-get install python-tk
 
 sudo apt-get -y install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+
 #sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+
 #sudo apt-get -y install libxvidcore-dev libx264-dev
+
 sudo apt-get -y install qt4-dev-tools
+
 pip install opencv-python
+
 #pip install opencv-contrib-python
+
 #sudo apt-get install libhdf5-dev
 
 wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
 
 tar -zxvf protobuf-all-3.5.1.tar.gz
+
 cd protobuf-3.5.1
+
 ./configure
+
 make
+
 make check
+
 sudo make install
+
 cd python
+
 export LD_LIBRARY_PATH=../src/.libs
+
 python setup.py build --cpp_implementation
+
 python setup.py test --cpp_implementation
+
 sudo python setup.py install --cpp_implementation
+
 export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+
 export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION_VERSION=3
+
 sudo ldconfig
 
 protoc
@@ -57,14 +81,19 @@ protoc
 sudo reboot now
 
 mkdir tensorflowOB
+
 cd tensorflowOB
+
 git clone --recurse-submodules https://github.com/tensorflow/models.git
 
 sudo nano ~/.bashrc
+
 # Move to the end of the file, and on the last line, add:
+
 export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflowOB/models/research:/home/pi/tensorflowOB/models/research/slim
 
 cd /home/pi/tensorflowOB/models/research
+
 protoc object_detection/protos/*.proto --python_out=.
 
 cd /home/pi/tensorflowOB/models/research/object_detection
@@ -72,4 +101,5 @@ cd /home/pi/tensorflowOB/models/research/object_detection
 #參考https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
 wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
+
 tar -xzvf ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
