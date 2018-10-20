@@ -9,8 +9,10 @@ https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/
 為了方便各位我也製作img檔，讓各位不必再浪費時間編譯安裝。
 (可以mail或敲我跟我要，因為使用說明我還要跟各位說)
 
-OS:(自行下再安裝，並要自己開啟ssh、VNC、camera等功能)
-2018-06-27-raspbian-stretch.img
+OS: 2018-06-27-raspbian-stretch.img
+
+(自行下再安裝，並要自己開啟ssh、VNC、camera等功能)
+
 
 PS:
 1.
