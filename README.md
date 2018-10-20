@@ -92,8 +92,9 @@ git clone --recurse-submodules https://github.com/tensorflow/models.git
 sudo nano ~/.bashrc
 
 # Move to the end of the file, and on the last line, add:
-export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflowOB/models/research:/home/pi/tensorflowOB/models/research/slim
 
+export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflowOB/models/research:/home/pi/tensorflowOB/models/research/slim
+--------------------------
 
 cd /home/pi/tensorflowOB/models/research
 
